@@ -35,7 +35,7 @@ Para desarrollo se recomienda la extensión *Live Server* de Visual Studio Code,
 
 ## Autor
 
-Ing Zulma Salas
+Marlon Kaled Orjuela Castillo
 
 ## Licencia
 
