@@ -132,3 +132,138 @@ button:focus-visible {
     font-size: 11px;
     letter-spacing: 0.05em;
 }
+.chip--activo {
+    border-color: var(--ocre);
+    background-color: #FDF4E3;
+    color: var(--cuero);
+}
+
+/* ---------- 4. Cabecera ---------- */
+.cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: var(--ancho);
+    margin: 0 auto;
+    padding: 22px 24px;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+/* El hierro de la finca */
+.marca__hierro {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    fill: none;
+    stroke: var(--tinta);
+    stroke-width: 7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.marca__texto {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.marca__texto strong {
+    font-family: var(--display);
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
+.marca__texto span {
+    color: var(--tinta-suave);
+    font-family: var(--dato);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav a {
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: var(--cuero);
+}
+
+.nav__accion {
+    padding: 9px 18px;
+    border: 1.5px solid var(--tinta);
+    border-radius: var(--radio);
+}
+
+.nav__accion:hover {
+    background-color: var(--tinta);
+    color: var(--hueso);
+}
+
+/* ---------- 5. Portada ---------- */
+.portada {
+    position: relative;
+    max-width: var(--ancho);
+    margin: 0 auto;
+    padding: 90px 24px 110px;
+    overflow: hidden;
+}
+
+/* El hierro grande, marcado al fondo */
+.portada__marca {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    width: 420px;
+    height: 420px;
+    transform: translateY(-50%);
+    fill: none;
+    stroke: var(--cuero);
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    opacity: 0.13;
+    pointer-events: none;
+}
+
+.portada__texto {
+    position: relative;
+    max-width: 680px;
+}
+
+.portada__titulo {
+    margin-bottom: 26px;
+    font-family: var(--display);
+    font-size: clamp(48px, 8vw, 92px);
+    font-weight: 800;
+    line-height: 0.94;
+    letter-spacing: 0.005em;
+}
+
+.portada__entrada {
+    max-width: 560px;
+    margin-bottom: 34px;
+    color: var(--tinta-suave);
+    font-size: 18px;
+}
+
+.portada__acciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
